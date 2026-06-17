@@ -1,10 +1,32 @@
+<script setup lang="ts">
+useSeoMeta({
+    title: "Contact Favour Chibueze | Frontend Engineer & Software Developer",
+    description: "Get in touch with Favour Chibueze for collaboration opportunities, project inquiries, or professional networking. Based in Munich, Germany and available for frontend development projects.",
+    ogTitle: "Contact Favour Chibueze | Frontend Engineer & Software Developer",
+    ogDescription: "Get in touch with Favour Chibueze for collaboration opportunities, project inquiries, or professional networking. Based in Munich, Germany.",
+    ogImage: "https://favourchibueze.com/favour-chibueze.jpg",
+    ogUrl: "https://favourchibueze.com/contact",
+    twitterTitle: "Contact Favour Chibueze | Frontend Engineer & Software Developer",
+    twitterDescription: "Get in touch with Favour Chibueze for collaboration opportunities, project inquiries, or professional networking.",
+    twitterImage: "https://favourchibueze.com/favour-chibueze.jpg",
+    twitterCard: "summary_large_image",
+    keywords: 'contact favour chibueze, frontend engineer contact, software developer hire, munich developer contact, vue.js developer hire, react developer contact'
+});
+
+useHead({
+    link: [
+        { rel: "canonical", href: "https://favourchibueze.com/contact" }
+    ]
+});
+</script>
+
 <template>
 
-    <section class="h-[90vh] overflow-hidden">
-            <div class="container flex justify-center max-w-full items-center pb-20 lg:py-20 h-screen gap-10">
+    <section class="h-[calc(100vh-180px)] overflow-hidden">
+            <div class="container flex justify-center max-w-full items-center h-full gap-10">
                 <div class="flex w-[100%] max-w-none mx-auto flex-col justify-center items-start">
                     <div class="lg:w-[86%] mx-auto self-center">
-                        <h1 class="mb-5 text-[4rem] lg:text-[140px] leading-[100%] text-balance font-jubilat">
+                        <h1 class="mb-5 text-4xl sm:text-5xl lg:text-[115px] leading-[105%] lg:leading-[100%] text-balance font-jubilat">
                             Let's create something amazing together.
                         </h1>
                         <div>
@@ -13,9 +35,9 @@
                                     Have an idea? Let's make magic together! Feel free to drop me a message. </p>
                         </div>
                        
-                        <p class="font-menlo lg:text-2xl mt-8 lg:text-right text-left text-balance">Thanks for stopping by my corner of the web. I look forward to sharing more of my journey with you!</p>
+                        <p class="font-menlo lg:text-2xl mt-6 lg:text-right text-left text-balance">Thanks for stopping by my corner of the web. I look forward to sharing more of my journey with you!</p>
 
-                        <div class="flex gap-10 pt-10 justify-end">
+                        <div class="flex gap-6 sm:gap-10 pt-8 justify-center sm:justify-end">
                             <a href="https://github.com/favour-chibueze">
                                 <Icon name="mdi:github" class="text-3xl cursor-pointer" />
                             </a>

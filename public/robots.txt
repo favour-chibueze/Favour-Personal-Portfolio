@@ -1,1 +1,7 @@
+User-agent: *
+Allow: /
 
+
+
+# Sitemap location
+Sitemap: https://favourchibueze.com/sitemap.xml

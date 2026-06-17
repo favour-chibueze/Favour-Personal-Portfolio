@@ -5,68 +5,55 @@ useSeoMeta({
     description: "Favour Chibueze is a skilled frontend developer specializing in building modern, responsive, and accessible web applications that deliver exceptional user experiences.",
     ogTitle: "Favour Chibueze | Frontend Engineer",
     ogDescription: "Favour Chibueze is a skilled frontend developer specializing in building modern, responsive, and accessible web applications that deliver exceptional user experiences.",
-    ogImage: "/favour-chibueze.jpg",
-    ogUrl: `http:localhost:3000`,
+    ogImage: "https://favourchibueze.com/favour-chibueze.jpg",
+    ogUrl: "https://favourchibueze.com",
     twitterTitle: "Favour Chibueze | Frontend Engineer",
     twitterDescription: "Favour Chibueze is a skilled frontend developer specializing in building modern, responsive, and accessible web applications that deliver exceptional user experiences.",
-    twitterImage: "/favour-chibueze.jpg",
-    twitterCard: "summary",
+    twitterImage: "https://favourchibueze.com/favour-chibueze.jpg",
+    twitterCard: "summary_large_image",
     keywords: 'frontend developer, frontend engineer, web developer, portfolio, React, Vue, seo manager, accessibility developer, Vue developer, germany web developer, munich developer, software developer'
 });
 
-useHead({
-  htmlAttrs: {
-    lang: 'en'
-  },
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/png',
-      href: '/favour-chibueze.jpg'
-    }
-  ]
-})
 
 </script>
 
 <template>
-    <main class="h-[92vh] overflow-hidden">
-        <div class="container flex justify-center max-w-full items-center py-5 lg:py-20 h-screen gap-10">
+    <main class="h-[calc(100vh-180px)] overflow-hidden">
+        <div class="container flex justify-center max-w-full items-center h-full gap-10">
             <div class="flex w-[100%] max-w-none mx-auto flex-col justify-center items-start">
                 <div class="lg:w-[72%] mx-auto self-center lg:text-left text-center">
                     <h1 class="mb-5 text-[2.5rem] lg:text-[140px] leading-[100%] text-balance font-jubilat">
                         Favour Chibueze
                     </h1>
-                    <h2 class="text-[2rem] lg:text-[100px] leading-[100%] lg:text-right text-balance font-simula">
-                        Software
-                        Engineer
+                    <h2 class="text-[2rem] lg:text-[5rem] leading-[100%] lg:text-right text-balance lg:whitespace-nowrap font-simula">
+                        Software Frontend Engineer
                     </h2>
                     <p class="text-balance font-menlo pt-5 pr-0 text-xl lg:text-2xl leading-8 lg:text-right">Based in
                         Munich,
-                        DE
+                        Germany
                     </p>
 
-                    <div class="flex gap-5 pt-10 lg:justify-end justify-center">
-                        <a href="https://github.com/favour-chibueze" aria-label="GitHub">
+                    <nav class="flex gap-5 pt-10 lg:justify-end justify-center" aria-label="Social media links">
+                        <a href="https://github.com/favour-chibueze" aria-label="GitHub Profile" rel="noopener noreferrer">
                             <Icon name="mdi:github" class="text-3xl cursor-pointer" />
                         </a>
 
-                        <a href="mailto:chibueze.favour.o@gmail.com" aria-label="Email">
+                        <a href="mailto:chibueze.favour.o@gmail.com" aria-label="Email Favour Chibueze">
                             <Icon name="mdi:email" class="text-3xl cursor-pointer" />
                         </a>
 
-                        <a href="https://www.linkedin.com/in/favourchibueze/" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/favourchibueze/" aria-label="LinkedIn Profile" rel="noopener noreferrer">
                             <Icon name="mdi:linkedin" class="text-3xl cursor-pointer" />
                         </a>
 
-                        <a href="https://twitter.com/FavourChi__" aria-label="Twitter">
+                        <a href="https://twitter.com/FavourChi__" aria-label="Twitter Profile" rel="noopener noreferrer">
                             <Icon name="mdi:twitter" class="text-3xl cursor-pointer" />
                         </a>
 
-                        <a href="https://favourchi.medium.com/" aria-label="Medium">
+                        <a href="https://favourchi.medium.com/" aria-label="Medium Blog" rel="noopener noreferrer">
                             <Icon name="mdi:medium" class="text-3xl cursor-pointer" />
                         </a>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>

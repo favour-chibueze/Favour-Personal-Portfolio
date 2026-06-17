@@ -4,7 +4,6 @@ const colorMode = useColorMode()
 const isOpen = ref(false);
 
 const toggleColorMode = () => {
-    console.log('toggleColorMode', colorMode.preference)
     colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
 }
 
@@ -21,7 +20,7 @@ useHead({
 
 
 <template>
-    <nav class="w-full transition-all bg-white dark:bg-[#1d1f20]">
+    <nav class="w-full transition-all bg-white dark:bg-[#1d1f20] relative z-50">
         <div class="container mx-auto flex justify-between items-center py-6 px-4">
             <!-- Logo -->
             <NuxtLink to="/" class="text-xl font-bold text-gray-900 dark:text-white">
@@ -47,13 +46,15 @@ useHead({
             </ul>
 
             <!-- Mobile Menu Button -->
-            <button @click="toggleMenu" class="md:hidden focus:outline-none">
+            <button @click="toggleMenu" class="md:hidden focus:outline-none" :aria-label="isOpen ? 'Close menu' : 'Open menu'"
+                :aria-expanded="isOpen" aria-controls="mobile-menu">
                 <Icon :name="isOpen ? 'mdi:close' : 'mdi:menu'" class="text-3xl text-gray-900 dark:text-white" />
             </button>
         </div>
 
         <!-- Mobile Dropdown -->
-        <div v-show="isOpen" class="md:hidden bg-white dark:bg-[#1d1f20] transition-all">
+        <div v-show="isOpen" id="mobile-menu"
+            class="md:hidden absolute top-full left-0 right-0 z-50 bg-white dark:bg-[#1d1f20] shadow-lg border-t border-gray-100 dark:border-gray-800 transition-all">
             <ul class="flex flex-col items-center space-y-4 py-4">
                 <li><NuxtLink to="/" class="nav-link" @click="isOpen = false">Home</NuxtLink></li>
                 <li><NuxtLink to="/about" class="nav-link" @click="isOpen = false">About</NuxtLink></li>
