@@ -14,7 +14,7 @@ const handleError = () => clearError({ redirect: '/' })
 </script>
 
 <template>
-  <section class="container mx-auto flex h-[calc(100vh-180px)] flex-col items-center justify-center text-center font-menlo">
+  <section class="container mx-auto flex min-h-[calc(100vh-180px)] flex-col items-center justify-center py-8 text-center font-menlo">
     <h1 class="text-[5rem] lg:text-[10rem] leading-none font-jubilat">
       {{ error.statusCode || 500 }}
     </h1>

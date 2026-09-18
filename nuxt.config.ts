@@ -32,12 +32,12 @@ export default defineNuxtConfig({
     head: {
       title: "Favour Chibueze | Frontend Engineer",
       meta: [
-        { name: "description", content: "Favour Chibueze is a skilled frontend engineer specializing in building modern, responsive, and accessible web applications. Based in Munich, Germany with 5+ years of experience in Vue.js, Nuxt, and open source contributions." },
+        { name: "description", content: "Favour Chibueze is a skilled frontend engineer specializing in building modern, responsive, and accessible web applications. Based in Munich, Germany with 6+ years of experience in Vue.js, Nuxt, and open source contributions." },
         { name: "author", content: "Favour Chibueze" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "keywords",
-          content: "frontend developer, Vue.js, Nuxt, React, frontend engineer, web developer, portfolio, software engineer, frontend entwickler münchen, accessibility developer, frontend engineer, Bavaria, Germany web developer, SEO Manager, Munich developer, open source contributor, Mautic, Eden Life, technical writer"
+          content: "frontend developer, Vue.js, Nuxt, React, frontend engineer, web developer, portfolio, software engineer, frontend entwickler münchen, accessibility developer, frontend engineer, Bavaria, Germany web developer, SEO Manager, Munich developer, open source contributor, Mautic, JUMiNGO, technical writer"
         },
         { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
         { name: "googlebot", content: "index, follow" },
@@ -96,13 +96,18 @@ export default defineNuxtConfig({
             },
             "worksFor": {
               "@type": "Organization",
-              "name": "Eden Life",
-              "url": "https://ouredenlife.com/"
+              "name": "JUMiNGO"
             },
-            "alumniOf": {
-              "@type": "Organization",
-              "name": "Fuelmetrics"
-            },
+            "alumniOf": [
+              {
+                "@type": "Organization",
+                "name": "Eden Life"
+              },
+              {
+                "@type": "Organization",
+                "name": "Fuelmetrics"
+              }
+            ],
             "knowsAbout": ["Frontend Development", "Vue.js", "Nuxt", "JavaScript", "TypeScript", "Web Accessibility", "Open Source"],
             "sameAs": [
               "https://twitter.com/FavourChi__",
@@ -145,8 +150,11 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      Montserrat: true,
+      Montserrat: {
+        wght: [400, 500, 600, 700],
+      },
     },
+    subsets: ['latin'],
     display: 'swap',
     preload: true,
   },

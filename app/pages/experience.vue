@@ -80,7 +80,7 @@ const experience = ref([
 </script>
 
 <template>
-    <section class="container mx-auto py-10 font-menlo">
+    <main class="container mx-auto py-10 font-menlo">
         <div class="lg:w-8/12 w-full mx-auto font-menlo">
             <h1 class="text-xl lg:text-4xl font-bold mb-6 text-balance">
                 A short summary of my career
@@ -108,5 +108,5 @@ const experience = ref([
             </div>
         </div>
 
-    </section>
+    </main>
 </template>

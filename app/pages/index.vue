@@ -18,8 +18,8 @@ useSeoMeta({
 </script>
 
 <template>
-    <main class="h-[calc(100vh-180px)] overflow-hidden">
-        <div class="container flex justify-center max-w-full items-center h-full gap-10">
+    <main class="min-h-[calc(100vh-180px)]">
+        <div class="container flex justify-center max-w-full items-center min-h-[calc(100vh-180px)] gap-10 py-8">
             <div class="flex w-[100%] max-w-none mx-auto flex-col justify-center items-start">
                 <div class="lg:w-[72%] mx-auto self-center lg:text-left text-center">
                     <h1 class="mb-5 text-[2.5rem] lg:text-[140px] leading-[100%] text-balance font-jubilat">
