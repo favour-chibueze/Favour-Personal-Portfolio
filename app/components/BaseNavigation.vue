@@ -157,3 +157,18 @@ useHead({
         </div>
     </nav>
 </template>
+
+<style lang="scss" scoped>
+@media (max-width: 768px) {
+    #mobile-menu:popover-open {
+        top: 5rem;
+        bottom: 60%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+        max-height: none;
+    }
+}
+</style>
